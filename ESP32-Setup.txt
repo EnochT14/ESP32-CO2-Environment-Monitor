@@ -1,0 +1,59 @@
+# ESP32 Arduino Sensor Data Readme
+
+This repository contains an Arduino sketch for an ESP32 microcontroller board that reads sensor data from a BME280 temperature, humidity, and pressure sensor, as well as a CCS811 air quality sensor. The data is then transmitted to a web server using HTTP POST requests. Additionally, the sensor readings are displayed on an OLED display.
+
+## Requirements
+
+To run this code, you will need the following components:
+
+- ESP32 microcontroller board
+- BME280 temperature, humidity, and pressure sensor
+- CCS811 air quality sensor
+- OLED display (SH1106)
+- Wi-Fi network
+
+## Installation
+
+1. Install the Arduino IDE (Integrated Development Environment) on your computer if you haven't already.
+2. Connect the ESP32 board to your computer using a USB cable.
+3. Open the Arduino IDE and go to **File -> Preferences**.
+4. In the "Additional Boards Manager URLs" field, add the following URL: `https://dl.espressif.com/dl/package_esp32_index.json`.
+5. Click **OK** to save the preferences.
+6. Go to **Tools -> Board -> Boards Manager**.
+7. Search for "esp32" and install the **esp32** board package by Espressif Systems.
+8. After installation, select the appropriate ESP32 board from **Tools -> Board**.
+9. Install the required libraries by going to **Sketch -> Include Library -> Manage Libraries** and searching for the following libraries:
+   - Adafruit Unified Sensor
+   - Adafruit BME280 Library
+   - Adafruit CCS811 Library
+   - Adafruit SH1106 Library
+   - WiFi
+   - WiFiMulti
+10. Click **Install** to install each library.
+11. Copy and paste the provided code into a new sketch in the Arduino IDE.
+
+## Configuration
+
+Before uploading the code to the ESP32 board, make sure to modify the following variables according to your setup:
+
+- `ssid`: Set the Wi-Fi network SSID (name).
+- `password`: Set the Wi-Fi network password.
+- `host`: Set the IP address or domain name of the web server where you want to send the data.
+- `url`: Set the URL endpoint on the web server where the data should be sent.
+
+## Usage
+
+1. Connect the BME280 and CCS811 sensors to the appropriate pins on the ESP32 board.
+2. Connect the OLED display to the I2C pins of the ESP32.
+3. Make sure the Wi-Fi network is accessible and the web server is running.
+4. Compile and upload the code to the ESP32 board.
+5. Open the serial monitor in the Arduino IDE to view the debug information.
+6. The ESP32 will start reading sensor data, sending it to the web server, and displaying the readings on the OLED display.
+7. Monitor the serial monitor output and check the web server for received data.
+
+## Troubleshooting
+
+- If you encounter any errors during compilation or uploading, make sure you have selected the correct board and have installed the required libraries.
+- Double-check the wiring connections between the ESP32 board, sensors, and OLED display.
+- Verify that the Wi-Fi network credentials and web server configuration are correct.
+- If you are experiencing issues with the sensors, ensure they are properly connected and functioning.
