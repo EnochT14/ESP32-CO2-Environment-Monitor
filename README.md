@@ -1,4 +1,4 @@
-# Project Name
+# ESP32 CO2 Monitor
 
 This project is a React application that fetches data from an API and visualizes it using Highcharts. The application displays charts for temperature, humidity, CO2 (Carbon Dioxide), and TVOC (Total Volatile Organic Compounds) data. It fetches data at regular intervals and updates the charts dynamically.
 
