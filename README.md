@@ -1,4 +1,4 @@
-![PCB](PCB Gerber/3D_Design.png "3D PCB")
+![PCB](https://github.com/EnochT14/ESP32-CO2-Environment-Monitor/blob/main/PCB%20Gerber/3D_Design.png?raw=true "3D PCB Design") 
 
 # ESP32 CO2 Monitor
 
