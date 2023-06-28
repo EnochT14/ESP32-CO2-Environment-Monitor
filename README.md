@@ -1,4 +1,4 @@
-![PCB](/PCB Gerber/3D_Design.png "3D PCB")
+![PCB](PCB Gerber/3D_Design.png "3D PCB")
 
 # ESP32 CO2 Monitor
 
